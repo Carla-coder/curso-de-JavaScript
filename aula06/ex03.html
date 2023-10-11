@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(161, 161, 240);
+            color: white;
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- dica de como fazer comentário em HTML-->
+    <p> Já me livrei da maldição!!!!</p>
+    <script>
+        // Aqui as variáveis estão como Strings
+        //var n1 = window.prompt('Digite o primeiro número:') // aqui esta recebendo um valor String
+        //var n2 = window.prompt('Digite o segundo número:') // aqui também esta recebendo um valor String
+        
+        // exemplo de como converter uma String para um número Inteiro
+        //var n1 = Number.parseInt(window.prompt('Digite o primeiro número: '))
+        //var n2 = Number.parseInt(window.prompt('Digite o segundo número: '))
+
+        // exemplo de como converter os dados para números Reais
+        //var n1 = Number.parseFloat(window.prompt('Digite o primeiro número: '))
+        //var n2 = Number.parseFloat(window.prompt('Digite o segundo número: '))
+
+        // exemplo de Number
+        var n1 = Number(window.prompt('Digite o primeiro número: '))
+        var n2 = Number(window.prompt('Digite o segundo número: '))
+        var soma = n1 + n2 // para obter o resultado da soma destas duas variáveis, precisa converter a String para number
+        
+        //window.alert('A soma dos números é:' + soma) // o + serve para adição (number) e também para concatenação (string)
+        // exemplo para converter número para String
+        //window.alert('A soma dos números é:' + soma.toString()) // Esta é uma forma de se fazer a converssão
+        //window.alert('A soma dos números é:' + String(soma)) // Esta é a segunda forma de se fazer a converssão
+
+        // exemplo usando o placeholder ${}
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+
+
+    </script>
+</body>
+</html>
